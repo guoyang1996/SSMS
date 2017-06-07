@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ui.LoginActivity"
+    android:background="@drawable/login"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/project"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <EditText
+        android:id="@+id/et_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="用户名"
+        android:drawableLeft="@drawable/user"
+        android:inputType="text"
+         android:background="@drawable/shape"
+        android:layout_below="@+id/logo"
+        android:layout_alignStart="@+id/et_pw"
+        android:layout_marginTop="18dp" />
+
+    <EditText
+        android:id="@+id/et_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="密码"
+        android:background="@drawable/shape"
+        android:inputType="textPassword"
+        android:layout_below="@+id/et_user"
+        android:layout_alignParentStart="true"
+        android:drawableLeft="@drawable/key"
+        android:layout_marginTop="18dp" />
+
+    
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/selector"
+        android:layout_height="45dp"
+        android:text="登录"
+        android:layout_below="@+id/et_pw"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
